@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介</title>
+    
+    <!-- Material UI CDN -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@mui/material@5.15.0/umd/material-ui.production.min.js"></script>
+    <script src="https://unpkg.com/@emotion/react@11.11.1/dist/emotion-react.umd.min.js"></script>
+    <script src="https://unpkg.com/@emotion/styled@11.11.0/dist/emotion-styled.umd.min.js"></script>
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 48px 24px;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+        .section {
+            background: white;
+            border-radius: 8px;
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 500;
+            color: #1976d2;
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .subsection {
+            margin-bottom: 20px;
+        }
+        .subsection-title {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #424242;
+            margin-bottom: 12px;
+        }
+        .content {
+            color: #616161;
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+        .flow-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .flow-list li {
+            padding: 12px 0;
+            padding-left: 32px;
+            position: relative;
+            color: #616161;
+            line-height: 1.8;
+        }
+        .flow-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #1976d2;
+            font-weight: bold;
+        }
+        .tool-list {
+            list-style: none;
+            padding: 0;
+            margin: 16px 0;
+        }
+        .tool-list li {
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+            color: #616161;
+        }
+        .tool-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #1976d2;
+            font-size: 1.5rem;
+            line-height: 0.8;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 12px 16px;
+            margin-top: 16px;
+            border-radius: 4px;
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>自己紹介</h1>
+    </div>
+    
+    <div class="container">
+        <!-- セクション1: 出版プロデュースビジネス -->
+        <div class="section">
+            <h2 class="section-title">① 出版プロデュースビジネス</h2>
+            
+            <div class="subsection">
+                <h3 class="subsection-title">概要</h3>
+                <p class="content">
+                    先生業をしている個人事業主や小さな会社の社長さんなどをターゲットにして、本の出版を通して権威を得るというものを一貫してサポートするサービスです。広告の作成もサポートし、本の出版もサポートするという形になっています。
+                </p>
+            </div>
+            
+            <div class="subsection">
+                <h3 class="subsection-title">ターゲット</h3>
+                <p class="content">
+                    先生業をしている個人事業主や小さな会社の社長さん
+                </p>
+            </div>
+            
+            <div class="subsection">
+                <h3 class="subsection-title">サービス内容</h3>
+                <p class="content">
+                    広告クリエイティブ、お問合せフォーム営業で集客して、LPにつなぎ、LINEに登録してもらい、LINEから動画を見てもらい、そこから面談の予約をしてもらい、顧客分析して、本の出版をプロの脚本家、デザイナーが支援して、Amazonでベストセラーに選ばれるようにするというサービスです。
+                </p>
+            </div>
+            
+            <div class="subsection">
+                <h3 class="subsection-title">具体的な流れ</h3>
+                <ul class="flow-list">
+                    <li>広告クリエイティブ、お問合せフォーム営業で集客</li>
+                    <li>LPにつなぐ</li>
+                    <li>LINEに登録してもらう</li>
+                    <li>LINEから動画を見てもらう</li>
+                    <li>面談の予約をしてもらう</li>
+                    <li>顧客分析を行う</li>
+                    <li>本の出版をプロの脚本家、デザイナーが支援</li>
+                    <li>Amazonでベストセラーに選ばれるようにする</li>
+                </ul>
+            </div>
+            
+            <div class="subsection">
+                <h3 class="subsection-title">作成ツール</h3>
+                <p class="content">
+                    以下のツールを運用する予定です（現在テスト段階で商品にはなっていません）：
+                </p>
+                <ul class="tool-list">
+                    <li>YouTubeにアップした面談動画の顧客分析の自動ツール</li>
+                    <li>フロントエンド商品としての自動本作成ツール</li>
+                    <li>売れている広告クリエイティブ分析ツール</li>
+                    <li>広告作成ツール</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- セクション2: 介護事業者向けオーダーメイドアプリ作成 -->
+        <div class="section">
+            <h2 class="section-title">② 介護事業者向けオーダーメイドアプリ作成</h2>
+            
+            <div class="subsection">
+                <h3 class="subsection-title">概要</h3>
+                <p class="content">
+                    IT界隈から避けられがちな介護業界で従業員50人以下くらいの小さな会社をターゲットにして、オーダーメイドでアプリを作成するサービスです。完全成果報酬型の月額制のサービスになっています。
+                </p>
+            </div>
+            
+            <div class="subsection">
+                <h3 class="subsection-title">ターゲット</h3>
+                <p class="content">
+                    従業員50人以下くらいの小さな介護事業者
+                </p>
+            </div>
+            
+            <div class="subsection">
+                <h3 class="subsection-title">サービス内容</h3>
+                <p class="content">
+                    現状要件を直接伺い、直接作成して納品しています。スケールするにあたって、自動要件定義、アプリリリースbotの作成を進めています。
+                </p>
+            </div>
+            
+            <div class="subsection">
+                <h3 class="subsection-title">現状と今後の展開</h3>
+                <p class="content">
+                    現状は要件を直接伺い、直接作成して納品しています。スケールするにあたって、自動要件定義、アプリリリースbotの作成を進めています。
+                </p>
+                <div class="note">
+                    <strong>注意：</strong> 現在テスト段階で、売り上げは立っていません。
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
