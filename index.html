@@ -133,24 +133,21 @@
         .manga-item {
             position: relative;
             width: 100%;
-            padding-top: 100%;
             overflow: hidden;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: #fafafa;
         }
         .manga-item:hover {
             transform: translateY(-4px);
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
         .manga-item img {
-            position: absolute;
-            top: 0;
-            left: 0;
+            display: block;
             width: 100%;
-            height: 100%;
-            object-fit: contain;
-            background-color: #fafafa;
+            height: auto;
+            object-fit: cover;
         }
         @media (max-width: 768px) {
             .manga-grid {
